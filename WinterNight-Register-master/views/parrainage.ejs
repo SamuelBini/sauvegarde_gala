@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Enregistrement | WINTER'S NIGHT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1 class="text-center m-5">PARRAINAGE L1 & L2</h1>
+  <div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">FILLEUL ( LICENCE 1 )</th>
+          <th scope="col">PARRAIN ( LICENCE 2 )</th>
+        </tr>
+      </thead>
+      <tbody>
+          
+        <% for(var i=0; i < parrainage.length; i++) { %>
+
+        <tr>
+          <td><%= parrainage[i].nom_l1 %> <%= parrainage[i].prenoms_l1 %></td>
+          <td><%= parrainage[i].nom_l2 %> <%= parrainage[i].prenoms_l2 %></td>
+        </tr>
+
+        <% } %>
+        
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+
+</html>
